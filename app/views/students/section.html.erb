@@ -1,7 +1,7 @@
-<h1>Beginner HTML Students</h1>
+<h1>Students</h1>
 
 <ul>
-<% @students.each do |stud| %>
+<% @students.shuffle.each do |stud| %>
   <li>
     <img src="<%= stud.photo_url %>">
     <h3>
